@@ -1,0 +1,350 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-28T13:34:38.264Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5866800400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.PublishingTweetSteps.MainSetupForBrowserAndTwitter()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Publish a tweet include plain text only",
+        "description": "",
+        "id": "publishing-tweets;publish-a-tweet-include-plain-text-only;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 4787296500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.PublishingTweetSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6174510300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is loggedin Twitter with his credentials \"01150362442\" ,\"Mario1995\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"01150362442\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"Mario1995\"",
+                  "offset": 61
+                }
+              ],
+              "location": "StepDefinitions.PublishingTweetSteps.user_is_loggedin_twitter_with_his_credentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4956279000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user send plain text \"Anime Lover is here\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Anime Lover is here\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitions.PublishingTweetSteps.user_send_plain_text(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1154468300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"Anime Lover is here\" is published successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Anime Lover is here\"",
+                  "offset": 0
+                }
+              ],
+              "location": "StepDefinitions.PublishingTweetSteps.is_published_successfully(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TweetpublishingInPlaintext"
+          },
+          {
+            "name": "@successful"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-28T13:35:01.233Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4046320500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.PublishingTweetSteps.MainSetupForBrowserAndTwitter()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Replying to own published tweet",
+        "description": "",
+        "id": "publishing-tweets;replying-to-own-published-tweet;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 4691093100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.PublishingTweetSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6206482400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user is loggedin Twitter with his credentials \"01150362442\" ,\"Mario1995\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"01150362442\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"Mario1995\"",
+                  "offset": 61
+                }
+              ],
+              "location": "StepDefinitions.PublishingTweetSteps.user_is_loggedin_twitter_with_his_credentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5087414200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user send plain text \"I love Anime\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"I love Anime\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitions.PublishingTweetSteps.user_send_plain_text(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1876486600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user reply to his \"I love Anime\" with \"specially Naruto\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"I love Anime\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"specially Naruto\"",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.PublishingTweetSteps.user_reply_to_his_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1079165800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "\"specially Naruto\" reply is published successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"specially Naruto\"",
+                  "offset": 0
+                }
+              ],
+              "location": "StepDefinitions.PublishingTweetSteps.reply_is_published_successfully(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReplyingToOwnTweet"
+          },
+          {
+            "name": "@successful"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-28T13:35:24.223Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5407862800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.PublishingTweetSteps.MainSetupForBrowserAndTwitter()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "User can\u0027t send same Tweet twice",
+        "description": "",
+        "id": "publishing-tweets;user-can-t-send-same-tweet-twice;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 892379500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.PublishingTweetSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5570416300,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user is loggedin Twitter with his credentials \"01150362442\" ,\"Mario1995\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"01150362442\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"Mario1995\"",
+                  "offset": 61
+                }
+              ],
+              "location": "StepDefinitions.PublishingTweetSteps.user_is_loggedin_twitter_with_his_credentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6320346400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user send plain text \"DeathNote is amazing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeathNote is amazing\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitions.PublishingTweetSteps.user_send_plain_text(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2707432000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Try to send same \"DeathNote is amazing\" again",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeathNote is amazing\"",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDefinitions.PublishingTweetSteps.try_to_send_same_again(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 504174700,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "\"DeathNote is amazing\" isn\u0027t sent and user get error message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeathNote is amazing\"",
+                  "offset": 0
+                }
+              ],
+              "location": "StepDefinitions.PublishingTweetSteps.isn_t_sent_and_user_get_error_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SameTweetTwice"
+          },
+          {
+            "name": "@failure"
+          }
+        ]
+      }
+    ],
+    "name": "Publishing Tweets",
+    "description": "  I want to check functionality of Tweet Publishing",
+    "id": "publishing-tweets",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/PublishingTweets.feature",
+    "tags": []
+  }
+]
